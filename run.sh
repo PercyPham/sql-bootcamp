@@ -62,6 +62,7 @@ else
     -e 'PGADMIN_DEFAULT_PASSWORD=sqldb-admin' \
     -p 8000:80 \
     -v /var/lib/pgadmin \
+    -v /$(pwd)/pgadmin-data:/data \
     -d \
     dpage/pgadmin4:4.17 \
     >/dev/null
